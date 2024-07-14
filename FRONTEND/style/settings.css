@@ -1,5 +1,113 @@
-h1{
-    font-size: 50px;
-    margin-top: 80px;
+#setting{
+    display: inline-flex;
+}
+.Userprofile{
+box-sizing: border-box;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+align-items: center;
+text-align: center;
+padding: 12px;
+
+border: red solid;
+ /* position: absolute;
+left: 25dvi;  */
+ justify-content: center;
+animation-name: hovering;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction:alternate-reverse;
+animation-play-state: running;
+animation-timing-function: ease-in-out;
+transition-duration: 3s;
+transition-timing-function: ease-in-out;
+transition-behavior:inherit;
+transition-property: all; 
+}
+ @keyframes hovering{
+    from{transform: translateY(0.5dvh);}
+    to{transform: translateY(-0.5dvh);}
+} 
+
+#headimg{
+    border:rgb(83, 83, 83) solid 1px;
+    box-sizing: border-box;
+    width: 5dvw;
+    height: 9dvh;
+    margin-left: 25px;
+    border-radius: 100%;
+    padding-left: 15px;
+    padding-top: 8px;
+    background-color: gray;
+}
+#eyes{
+    display: flex;
+    margin-bottom: 8px;
+    gap: 8px;
+}
+#eyes div:first-child{
+    border: whitesmoke 1px ridge;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: ghostwhite;
+}
+#eyes div:last-child{
+    border: whitesmoke 1px ridge;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: ghostwhite;
+}
+#lips{
+    border: whitesmoke 1px ridge;
+    width: 12px;
+    height: 12px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-left: 10px;
+    background-color: ghostwhite;
+}
+#bodyimg{
+    border:rgb(83, 83, 83) solid 1px;
+    box-sizing: border-box;
+    width: 7dvw;
+    height: 9dvh;
+    margin-left: 10px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: grey;
+}
+.hey{
+    position: absolute;
+    top: -1dvi;
+    left: 9dvi;
+    border: solid forestgreen 1px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    font-weight: bolder;
+    font-family: monospace;
+    color: blue;
+    display: none;
+    font-size: x-large;
+}
+:is(.Userprofile:hover){
+    .hey{
+        display: initial;
+    }
+}
+.Userinfo{
+    margin-left: 20px;
     text-align: center;
+    font-size: x-large;
+    width:40dvw;
+    height: 60dvh;
+}
+.Userinfo input{
+    height: 40px;
+    width: 80%;
+    text-align: center;
+    font-size: larger;
 }
