@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Espending-income</title>
+  <link rel="stylesheet" href="/FRONTEND/style/profile.css" />
+  <link rel="stylesheet" href="/FRONTEND/style/expense.css" />
+</head>
+<body>
+  <header>
+    <img src="path_to_your_image" alt="User profile" />
+    <ul>
+      <li>
+        <a href="dashboard.html" id="dash"><img src="path_to_image" alt="" />Dashboard</a>
+      </li>
+      <li>
+        <a href="report.html" id="report"><img src="path_to_image" alt="" />Report</a>
+      </li>
+      <li>
+        <a href="income.html" id="income"><img src="path_to_image" alt="" />Income</a>
+      </li>
+      <li>
+        <a href="expense.html" id="expenses"><img src="path_to_image" alt="" />Expenses</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="settings.html"><img src="path_to_image" alt="" />Settings</a>
+      </li>
+      <li>
+        <a href="sign.html"><img src="path_to_image" alt="" />Sign Out</a>
+      </li>
+    </ul>
+  </header>
+  <main> 
+    <section id="income" class="income">
+      <h1>Expenses</h1>
+      <div class="first">
+        <h2>Total Expenditure : &dollar; <span id="money">0.00</span></h2>
+      </div>
+      <article class="main1">
+        <div class="form">
+          <form action="">
+            <span class="formitm">
+              <p>Expense Name</p>
+              <input type="text" class="input">
+            </span>
+            <span class="formitm">
+              <p>Amount</p>
+              <input type="number" class="input" placeholder="Enter amount">
+            </span>
+            <span class="formitm">
+              <p>Date</p>
+              <input type="datetime-local" class="input">
+            </span>
+          </form>
+        </div>
+        <div class="display">
+          <h2>Display</h2>
+          <table>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <button class="add"> Add </button>
+    </section>
+  </main>
+  <script src="/FRONTEND/js/responsive.js"></script>
+</body>
+</html>
