@@ -1,0 +1,92 @@
+.income{
+    font-size: x-large;
+    line-height: 300%;
+}
+div{
+    width: 100%;
+    box-sizing: border-box;
+    height: max-content;
+    background-color: whitesmoke;
+    border-style: none;
+    border-width: 1px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.main1{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+.form{
+    box-sizing: border-box;
+    width: 30%;
+    text-align: left;
+    padding: 12px;
+    padding-left: 15px;
+    font-size: larger;
+}
+.display{
+    box-sizing: content-box;
+    width: 67%;
+    height:300px; 
+}
+.add{
+    font-size: larger;
+    font-weight: bolder;
+    width: 22%;
+    height: 10%;
+    border-radius: 20px;
+    border-style: ridge;
+    border-width: 1px;
+    background-color: burlywood;
+    position: absolute;
+    top: 350px;
+    
+}
+.add:hover{
+background-color:rgb(82, 67, 49) ;
+color: rgb(124, 124, 235);
+}
+.add:active{
+    background-color: blue;
+    text-shadow: 2dvi;
+    color: whitesmoke;
+
+}
+
+.formitm{
+    line-height: 1;
+}
+.input{
+    height:25px ;
+    font-size: large;
+    padding: 2px;
+    text-align: center;
+    border-radius:25px ;
+    border-style: ridge;
+}
+.display ol{
+    text-align: left;
+    margin-left: 30px;
+    line-height: 30px;
+    font-size: 20px;
+
+}
+.display ol li{
+    border: black solid 1px;
+    width: 95%;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    padding: 2px;
+    padding-left: 8px;
+}
+table{
+    width: 100%;
+}
+
+.display {
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto;
+  }
+  
