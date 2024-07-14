@@ -23,7 +23,7 @@ This is an expense tracker with nodejs and mongodb
 # Applications for inspiration
 
 
-# common sense requirements
+# other requirements
   1. Assets : We need the user to be able to enter the income and other aspects that give money
   2. Debt : We need to know the routine things that take money
   3. Inpromtu : Unplanned expenses (This under debt)
