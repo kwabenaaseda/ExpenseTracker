@@ -7,7 +7,7 @@
 html {
     font-family: 'Courier New', Courier, monospace;
     background-color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.3rem;
     overflow: auto;
 }
 
@@ -38,6 +38,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    box-sizing: border-box;
+    border: solid transparent;
 }
 nav{
     display: inline-flex;
@@ -116,7 +118,7 @@ header ul {
 } */
 
 main {
-    margin-top: 10vh;
+    margin-top: 15vh;
     font-size: x-large;
 }
 

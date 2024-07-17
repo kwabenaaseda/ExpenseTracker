@@ -1,0 +1,14 @@
+# The default owner for the entire repository
+* @Mr_Mensah
+
+# Owner for documentation
+/docs/ @docWriter
+
+# Owners for JavaScript files in the src directory
+/src/*.js @jsDevTeam
+
+# Multiple owners for the frontend directory
+/frontend/ @frontendLead @frontendDev
+
+# Owner for a specific file
+/src/index.js @indexOwner
