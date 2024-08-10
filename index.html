@@ -9,24 +9,38 @@
     <link rel="stylesheet" href="style/landing.css" />
     <link rel="icon" href="" />
   </head>
-  <body>
+  <body id="bod"> <button class="dark" onclick="">
+    <p id="theme">&star;</p>
+    <p id="theme">&star;</p>
+    <p id="theme">&star;</p>
+    <p id="theme">&star;</p>
+    <p id="theme">&star;</p>
+    <span id="text">Dark Mode</span>
+  </button>
     <header>
       <nav>
         <ul>
           <li class="Company">Espending</li>
-          <li><a href="#AboutUs">About</a></li>
+          <!-- <li><a href="#AboutUs">About Us</a></li>
           <li><a href="#Pricing">Pricing</a></li>
-          <li><a href="#Terms">Terms</a></li>
-        </ul>
+          <li><a href="#Terms">Terms & Conditions</a></li>
+         --></ul>
         <ul class="buttons">
           <li>
             <a href="dashbaord.html"><button id="login">Log In</button></a>
           </li>
           <li>
-            <a href="sign.html"><button id="sign">Sign Up for Free</button></a>
+            <a href="sign.html"><button id="sign">Sign Up</button></a>
           </li>
+         
         </ul>
       </nav>
+      
+      <ul id="list">
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#Pricing">Pricing</a></li>
+        <li><a href="#Terms">Terms & Conditions</a></li>
+      </ul>
     </header>
     <main>
       <section id="Opening">
@@ -36,10 +50,15 @@
             Enjoy guilt-free spending and effortless saving with a
             user-friendly, flexible expense tracker.
           </p>
-          <button class="start">Get Started For Free</button>
+          <button class="start">Get Started</button>
         </div>
        <!--  <img src="" alt="Child Waving Welcome" title="Child Waving Welcome" /> -->
-      </section>
+      <article class="show">
+        <img src="pictures/lapee.png" alt="Laptop" id="slideshow">
+        <video autoplay preload="auto"  controls loop id="showVid">
+          <source src="videos/150446aee3f9dc4980f8fbd56cb860d8.mp4">
+        </video>
+      </article></section>
       <section id="AboutUs">
         <h1>About Us</h1> 
         <!-- <img src="/FRONTEND/pictures/about us.jpeg" alt="" class="floatrt"> -->
@@ -49,7 +68,7 @@
       <section id="Pricing">
         <h1>Pricing</h1><br>
         <article><div class="Prices">
-            <div>
+           <!--  <div>
                 <h1>Free Pack</h1><h2>&dollar;5.00</h2>
             <table>
                 <tbody>
@@ -85,46 +104,16 @@
                     </tr>
                 </tbody>
             </table></div>
-        </div>
-        <div class="Prices">
-            <div><h1>Premium Pack</h1><h2>&dollar;5.00</h2>
-            <table>
-                <tbody>
-                    <tr>
-                        <th scope="col">
-                            <td>f &check;</td>
-                            <td>f &cross;</td>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="col">
-                            <td>f &check;</td>
-                            <td>f &cross;</td>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="col">
-                            <td>f &check;</td>
-                            <td>f &cross;</td>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="col">
-                            <td>f &check;</td>
-                            <td>f &cross;</td>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="col">
-                            <td>f &check;</td>
-                            <td>f &cross;</td>
-                        </th>
-                    </tr>
-                </tbody>
-            </table></div>
-        </div></article>
+        </div> -->
+        </article>
       </section>
       <section></section>
     </main>
+    <footer>
+      &copy;<h1>Mr.Mensah</h1>
+      <h2>Expensify.com</h2>
+      <p><a href="">Terms & Conditions</a></p>
+    </footer>
+    <script src="/js/darkmode.js"></script>
   </body>
 </html>

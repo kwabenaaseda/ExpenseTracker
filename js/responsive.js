@@ -21,7 +21,7 @@ function addIncome() {
     var newRow = document.createElement('tr');
     newRow.innerHTML = `
       <td>${incomeName}</td>
-      <td>${amount}</td>
+      <td id="money">${amount}</td>
       <td>${dateTime}</td>
     `;
   
