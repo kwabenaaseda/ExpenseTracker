@@ -1,11 +1,15 @@
 /*Shape*/
     /*hamburger*/
     #ham{
-        border-top: solid red 4px;
-        border-bottom: solid red 4px;
-        width: 5dvi;
-        height: 2dvi;
-        background-color: transparent;
+        border-top: solid honeydew 4px;
+        border-bottom: solid honeydew 4px;
+        width: 4dvi;
+        height: 4dvi;
+        background-color: white;
+        position: absolute;
+        left: 75dvi;
+        top: 1dvi;
+        display: none;
     }
     /* #h:hover #ham{
         height: 3dvi;
@@ -28,6 +32,7 @@
 }
 
 
+
     /*hamburger end*/
 /*shape end*/
 *{
@@ -48,7 +53,7 @@ body{
     height: 100%;
     padding: 4dvw;
     background-color: azure;
-    gap: 20px;
+    gap: 1dvi;
 }
 a{
     text-decoration: none;
@@ -104,10 +109,30 @@ main section{
 }
 /*Media screens*/
 @media screen and (max-width:700px) {
+    #header{
+        width: 5dvi;
+        height: 5dvi;
+    }
     header img {
        display: none;
    }
    header{
+    height: max-content;
+    width: max-content;
+    padding: 2dvi;
+    border: 1dvi groove green;
+   }
+   #header{
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+   .nav{
     display: none;
    }
    
@@ -127,11 +152,50 @@ main section{
     box-sizing: border-box;
     height: 100%;
    }
-   
-   
+   #h{
+    width: max-content;
+    position: fixed;
+
+   }
+   #ham:focus{
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+   }
+   #header:focus{
+    border-color: blue;
+    cursor: pointer;
+    z-index: 100%;
+   }
+
+  :is(#ham:focus,#h:focus-within)~#header .nav{
+    position: absolute;
+    width:70dvi ;
+    display: inline-block;
+  }
+  :is(#header:focus,#header:focus-within,#header:focus) .nav{
+    position: absolute;
+    width:70dvi ;
+    display: inline-block;
+  }
+ .nav li{
+    font-size: 4.5dvi;
+    border-bottom: goldenrod solid 1px;
+
+ }
+ .nav li:last-child{
+    font-size: 4.5dvi;
+    border-bottom: none;
+
+ }
    
 }
 @media screen and (min-width:700px) {
    #h{display: none;}
+   #header{
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+   }
 }
 /*end of media screen*/
