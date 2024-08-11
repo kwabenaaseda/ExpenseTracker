@@ -1,6 +1,8 @@
+
 .income{
     font-size: x-large;
     line-height: 300%;
+    height: max-content;
 }
 div{
     width: 100%;
@@ -14,6 +16,7 @@ div{
     border-radius: 20px;
 }
 .main1{
+    
     width: 100%;
     margin-top: 1.2dvi;
     display: flex;
@@ -102,4 +105,35 @@ tbody{
     height: 21dvi;
    /* Adjust as needed */
     overflow-y: auto;
+  }
+
+  @media screen and (max-width:450px) {
+   main{
+    font-size: 100%;
+    text-wrap: wrap;
+   }
+    .main1{
+    display: inline-block;
+    font-size: 80%;
+   }
+   .form{
+    width: 100%;
+    font-size: 80%;
+   }
+   .display{
+    width: 100%;
+    margin-top: 12dvi;
+    font-size: 80%;
+   }
+   h1{
+    font-size: 100%;
+   }
+   h2{
+    font-size: 100%;
+   }
+   .add{
+    position: relative;
+    top: -13rem;
+    font-size: 80%;
+   } 
   }
