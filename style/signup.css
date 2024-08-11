@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: rgb(7, 7, 17);
+        color: rgb(235, 235, 235);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,'Times New Roman', Times, serif,Arial, Helvetica, sans-serif,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,monospace;
+        font-size: 2.5dvi;
+        font-style: italic;
+        text-transform: uppercase;
+    
+    }
+    body{
+        box-shadow:navajowhite;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: azure;
+    background-image: url(/pictures/pexels-james-wheeler-417074.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+    main{
+        width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 1dvi;
+
+
+} 
+section{
+
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+input{
+    height: 2.5dvi;
+    width: 50%;
+    border: groove silver 0.2dvi;
+    border-radius: 1dvi;
+    -webkit-border-radius: 1dvi;
+    -moz-border-radius: 1dvi;
+    -ms-border-radius: 1dvi;
+    -o-border-radius: 1dvi;
+    text-align: center;
+    color: rgb(7, 7, 49);
+    font-weight: 900;
+}
+section form{
+    width: 60%;
+    justify-self: center;
+    display: inline-block;
+    flex-grow: inherit;
+    flex-shrink: inherit;
+    flex-wrap: wrap;
+    padding: 1dvi;
+}
+form div{
+   display: inline-flex;
+}
+article{
+    text-align: ;
+    line-height: 2dvi;
+    margin-bottom: 1rem;
+}
+.options{
+    background: linear-gradient(to top,rgb(63, 25, 25),rgb(111, 133, 111));
+    width: 6dvi;
+    height: 6dvi;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    box-sizing: border-box;
+
+
+}
+.option ul{
+    margin-left:-25dvi;
+    gap: 20%;
+    list-style: none;
+display: inline-flex;
+}
+

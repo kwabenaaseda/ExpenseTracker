@@ -7,16 +7,19 @@
 html {
     font-family: 'Courier New', Courier, monospace;
     background-color: whitesmoke;
-    font-size: 1.3rem;
+    font-size: 1dvi;
     overflow: auto;
+    box-sizing: border-box;
+    padding: 2dvi;
 }
 
 body {
-    width: 96%;
+    box-sizing: border-box;
+    width: 100%;
     background-color: rgb(236, 231, 231);
-    font-size: 1.125rem;
+    font-size: 1.125dvi;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1dvi;
 }
 
 ul {
@@ -35,36 +38,55 @@ a:hover {
 }
 
 header {
-    display: flex;
     justify-content: space-between;
-    padding: 1rem;
     box-sizing: border-box;
-    border: solid transparent;
+    width: 100%;
+    padding: 1dvi;
+    border: rgb(179, 163, 134) solid 1px;
+    background-color: aliceblue;
 }
 nav{
     display: inline-flex;
-    gap: 10rem;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 50%;
+    padding: 1dvi;
 }
 
 header ul {
     display: flex;
-    gap: 2rem;
+    gap: 10%;
 }
-
+.buttons{
+    width: 50%;
+    justify-content: end;
+    padding-right: 3dvi;
+}
 .buttons button {
-    padding: 0.8rem;
+    width: 120%;
+    height: max-content;
+    padding: 0.8dvi;
     border-radius: 10px;
     border: 1px ridge;
     cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+#list{
 
+justify-content: end;
+gap: 2%;
+padding: 1dvi;
+}
 .buttons button:hover {
     font-weight: 500;
     transform: scale(1.1);
     transition-duration: 0.2s;
 }
-/* Add this block to your existing CSS */
 
+/*Animations*/
 @keyframes glossy-animation1 {
     0% { background-color: rgb(4, 5, 8); color: midnightblue; }
     50% { background-color: rgba(46, 16, 177, 0.425); color: white; }
@@ -75,9 +97,68 @@ header ul {
     50% { background-color: rgba(46, 16, 177, 0.425); color: white; }
     100% { background-color: rgb(4, 5, 8); color: midnightblue; }
 }
+@keyframes hover{
+    from{
+        transform: translateY(-0.2dvi);
+        -webkit-transform: translateY(-0.2dvi);
+        -moz-transform: translateY(-0.2dvi);
+        -ms-transform: translateY(-0.2dvi);
+        -o-transform: translateY(-0.2dvi);
+}
+to{
+    transform: translateY(0.2dvi);
+    -webkit-transform: translateY(0.2dvi);
+    -moz-transform: translateY(0.2dvi);
+    -ms-transform: translateY(0.2dvi);
+    -o-transform: translateY(0.2dvi);
+}
+}
+@keyframes constelation{
+    0%{
+        transform:rotate(360deg) ;
+        -webkit-transform:rotate(360deg) ;
+        -moz-transform:rotate(360deg) ;
+        -ms-transform:rotate(360deg) ;
+        -o-transform:rotate(360deg) ;
+}
+    10%{
+        color: rgb(175, 35, 35);
+        font-weight: 200;
+    }
+    20%{
+        color: midnightblue;
+        font-weight: 300;
+    }
+    30%{
+        color: rosybrown;
+        font-weight: 400;
+    }
+    40%{
+        color: green;
+        font-weight: 700;
+    }
+    50%{
+        color: rgb(175, 35, 35);
+        font-weight: 800;
+    }
+    60%{
+        color: midnightblue;
+        font-weight: 900;
+    }
+    70%{
+        color: rosybrown;
+        font-weight: 1000;
+    }
+    80%{
+        color: green;
+        font-weight: bolder;
+    }
+}
+/*Animations end */
+
 
 #login {
-    background-color: transparent;
+    background-color: midnightblue;
     color: white;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -92,6 +173,10 @@ header ul {
     background-color: lime;
     color: white;
     transition: background-color 0.3s, color 0.3s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 #sign:hover {
@@ -100,49 +185,117 @@ header ul {
     color: rgb(25, 112, 68);
     border-color: rgb(25, 106, 112);
 }
-
-
-/* #login {
-    background-color: transparent;
-    color: white;
-}
-
-#login:hover {
-    background-color: rgb(4, 5, 8);
-    color: midnightblue;
-    border-color: midnightblue;
-} */
-
-/* #sign {
-    background-color: lawngreen;
-} */
-
-main {
-    margin-top: 15vh;
-    font-size: x-large;
-}
-
-#Opening {
-    background: url('path/to/your/image.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 2rem;
+.dark{
+    transform: scale(50%);
+    display: flex;
+    border: midnightblue 5px groove;
+    position: fixed;
+    right: -5.8dvi;
+    bottom: 2dvi;
+    box-sizing: border-box;
+    width: 13dvi;
+    height: 8dvi;
     text-align: center;
-    margin-bottom: 10px;
+    padding-left: 2dvi;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    font-size: 3dvi;
+    font-weight: bolder;
+    background-color: black;
+    color: wheat;
+    -webkit-transform: scale(50%);
+    -moz-transform: scale(50%);
+    -ms-transform: scale(50%);
+    -o-transform: scale(50%);
+}
+.dark span{
+    margin-left: -8dvi;
+}
+.dark p{
+    z-index: -100px;
+    align-self: center;
+    left: 2dvi;
+}
+/* .dark:hover{cursor: pointer;
+right: -3.8px;} */
+.dark p:hover{cursor: pointer;
+right: -3.8px;}
+.dark span:hover{cursor: pointer;
+right: -3.8px;}
+#theme:hover{
+    cursor: pointer;
+}
+#theme{
+    font-size: 2dvi;
+    color: black;
+    font-style: italic;
+    animation-name: constelation;
+    animation-duration: 5s;
+    transition-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    animation-direction:normal;
+}
+main {
+    margin-top: 10vh;
+    font-weight: bolder;
+    font-size:2dvi;
+}
+
+section{
+    box-sizing: border-box;
+    padding: 2dvi;
+    margin-bottom: 2dvi;
+}
+#Opening {
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    background-size: cover;
     /* color: white; */
 }
-
+.show{
+    display: flex;
+    box-sizing: border-box;
+    width: 45%;
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    transition-behavior:inherit;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+#showVid{
+    height: 80%;
+    width:99%;
+margin-left: -98%;
+margin-top: 1.8%;
+}
+#slideshow{
+    width: 100%;
+    z-index: -500px;
+}
 #Opening div {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 45%;
+    box-sizing: border-box;
+    flex-grow: inherit;
+    flex-wrap: wrap;
+    padding: 2dvi;
+    
 }
 .start{
     background-color: rgba(46, 16, 177, 0.425);
-    width: max-content;
-    height: max-content;
+    width: 50%;
     border:9px;
-    padding: 1rem;
-    margin-top: 9px;
-    border-radius: 20px;
+    padding: 1dvi;
+    margin-top: 1.5dvi;
+    border-radius: 8dvi;
+    -webkit-border-radius: 8dvi;
+    -moz-border-radius: 8dvi;
+    -ms-border-radius: 8dvi;
+    -o-border-radius: 8dvi;
 }
 #AboutUs{
     text-align: left;
@@ -161,11 +314,68 @@ main {
     gap: 20px;
 }
 .Prices{
+    background-image: url(/pictures/pexels-james-wheeler-417074.jpg);
+    background-size: cover;
+    background-origin: border-box;
+    backface-visibility: ;
+    background-repeat: no-repeat;
     border: rgba(23, 161, 155, 0.116) groove 5px;
     width: max-content;
-    padding: 2rem;
+    height: 35dvi;
+    padding: 2dvi;
     border-radius: 20px;
     justify-content: center;
     background-color: rgba(23, 52, 219, 0.466);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: inline-block;
+    color: rgb(236, 195, 236);
+    text-align: center;
+    font-weight: bolder;
 }
 
+.nameOfprice{
+    font-size: larger;
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.amountOfprice{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+footer{width: 100%;
+background-color: black;
+padding: 2dvi;
+color: wheat;}
+
+#flexing{
+    width: 98%;
+    gap: 1dvi;
+    display: inline-flex;
+}
+/*Hover States*/
+.Prices:hover{
+    transform:translateY(-2dvi)rotateY(-48deg);
+    box-sizing: border-box;
+    border: black solid;
+    box-shadow:200dvi black solid;
+    -webkit-transform:translateY(-2dvi)rotateY(-48deg);
+    -moz-transform:translateY(-2dvi)rotateY(-48deg);
+    -ms-transform:translateY(-2dvi)rotateY(-48deg);
+    -o-transform:translateY(-2dvi)rotateY(-48deg);
+}
+/*hover states end*/
+/*media states*/
+@media screen and (max-width:450px) {
+
+    
+}
+/*media states end */
