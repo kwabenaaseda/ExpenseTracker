@@ -14,18 +14,20 @@ div{
     border-radius: 20px;
 }
 .main1{
-    margin-top: 10px;
+    width: 100%;
+    margin-top: 1.2dvi;
     display: flex;
-    gap: 20px;
+    gap: 0.2dvi;
+    padding: 0;
+    text-align: left;
 }
 .form{
     box-sizing: border-box;
-    width: 30%;
+    width: 50%;
     text-align: left;
-    padding: 12px;
-    padding-left: 15px;
+    padding: 1.5dvi;
+    padding-left: 1.5dvi;
     font-size: larger;
-    overflow-x: auto;
 }
 .display{
     box-sizing: content-box;
@@ -41,7 +43,7 @@ div{
     border-style: ridge;
     border-width: 1px;
     background-color: burlywood;
-   /*  position: absolute;
+    /* position: absolute;
     top: 350px;
      */
 }
@@ -60,12 +62,17 @@ color: rgb(124, 124, 235);
     line-height: 1;
 }
 .input{
-    height:25px ;
+    width: 100%;
     font-size: large;
-    padding: 2px;
+    padding: 0.8dvi;
     text-align: center;
-    border-radius:25px ;
+    border-radius:2dvi ;
     border-style: ridge;
+    -webkit-border-radius:2dvi ;
+    -moz-border-radius:2dvi ;
+    -ms-border-radius:2dvi ;
+    -o-border-radius:2dvi ;
+    margin-left: -0.8dvi;
 }
 .display ol{
     text-align: left;
@@ -85,9 +92,14 @@ color: rgb(124, 124, 235);
 table{
     width: 100%;
 }
+tbody{
+    border: red solid 2px;
+    gap: 1dvi;
+}
 
 .display {
-    max-height: 300px; /* Adjust as needed */
+    width: 50%;
+    height: 21dvi;
+   /* Adjust as needed */
     overflow-y: auto;
   }
-  

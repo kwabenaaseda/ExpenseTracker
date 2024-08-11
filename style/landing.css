@@ -258,7 +258,7 @@ section{
 .show{
     display: flex;
     box-sizing: border-box;
-    width: 55%;
+    width: 45%;
     animation-name: hover;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -268,8 +268,8 @@ section{
     transition-timing-function: ease-in-out;
 }
 #showVid{
-    height: 60%;
-    width:69%;
+    height: 80%;
+    width:99%;
 margin-left: -98%;
 margin-top: 1.8%;
 }
@@ -320,7 +320,7 @@ margin-top: 1.8%;
     backface-visibility: ;
     background-repeat: no-repeat;
     border: rgba(23, 161, 155, 0.116) groove 5px;
-    width: 35%;
+    width: max-content;
     height: 35dvi;
     padding: 2dvi;
     border-radius: 20px;
@@ -330,14 +330,37 @@ margin-top: 1.8%;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    -webkit-backface-visibility:;
+    display: inline-block;
+    color: rgb(236, 195, 236);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.nameOfprice{
+    font-size: larger;
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.amountOfprice{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 footer{width: 100%;
 background-color: black;
 padding: 2dvi;
 color: wheat;}
 
-
+#flexing{
+    width: 98%;
+    gap: 1dvi;
+    display: inline-flex;
+}
 /*Hover States*/
 .Prices:hover{
     transform:translateY(-2dvi)rotateY(-48deg);
@@ -350,3 +373,9 @@ color: wheat;}
     -o-transform:translateY(-2dvi)rotateY(-48deg);
 }
 /*hover states end*/
+/*media states*/
+@media screen and (max-width:450px) {
+
+    
+}
+/*media states end */
