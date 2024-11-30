@@ -1,59 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIGN UP PAGE</title>
-    <link rel="stylesheet" href="/style/signup.css" />
-  </head>
-  <body>
-    <main>
-      <section>
-        <form action="submit">
-          <article>
-            <h5>First Name</h5>
-            <input type="text" required autocapitalize="on" />
-          </article>
-
-          <article>
-            <h5>Email</h5>
-            <input type="text" required />
-          </article>
-          <article>
-            <h5>New Password</h5>
-            <input type="password" required placeholder="6+ charaters" a />
-          </article>
-          <article>
-            <h5>Confirm Password</h5>
-            <input type="password" required placeholder="6+ charaters" a />
-          </article>
-          <button id="sign">SIGN IN</button>
-        </form>
-      </section>
-      <section class="option">
-        <h4>Others</h4>
-        <ul>
-          <li>
-            <a href=""><img class="options" src="/pictures/Naruto edit.jpeg" alt=""></a>
-          </li>
-          <li>
-            <a href=""><img class="options" src="/pictures/Naruto edit.jpeg" alt=""></a>
-          </li>
-          <li>
-            <a href=""><img class="options" src="/pictures/Naruto edit.jpeg" alt=""></a>
-          </li>
-          <li>
-            <a href=""><img class="options" src="/pictures/Naruto edit.jpeg" alt=""></a>
-          </li>
-          <li>
-            <a href=""><img class="options" src="/pictures/Naruto edit.jpeg" alt=""></a>
-          </li>
-          <li>
-            <a href=""><img class="options" src="/pictures/Naruto edit.jpeg" alt=""></a>
-          </li>
-        </ul>
-      </section>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+<body onload="Onload()">
+    <header>
+        <h1>E-spending</h1>
+        <a href="./index.html"><p><<<</p><h2>Home</h2></a>
+    </header>
+    <main id="main"><!-- 
+        <h2>Manage your finances like a Pro!!</h2> -->
+           <form onkeypress="formal()">
+            <h3 id="verify">Verified</h3>
+            <label for="name">Name: <br><input type="text" id="userName" name="name" autocomplete="additional-name" required></label>
+            <p id="nameErr"></p>
+            <label for="mail">Mail:<br><input type="email" id="userMail" name="mail" autocomplete="email" required></label>
+            <p id="mailErr"></p>
+            <label for="pass">Password:<br><input type="password" id="userPassword" name="pass" autocomplete="new-password" required></label>
+            <p id="passErr"></p>
+            <label for="cpass">Confirm Password:<br><input type="password" id="ConfirmPassword" name="cpass" autocomplete="current-password" required></label>
+            <p id="cpassErr"></p>
+            <p>Already Have an account? <a href="login.html">Log In</a></p>
+           </form> 
+           <a href="./dashbaord.html" onclick="UserData()" id="startBtn"><button>Start</button></a>
+        <script src="./js/signup.js"></script>
     </main>
-  </body>
+</body>
 </html>

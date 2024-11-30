@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+html{
+    scrollbar-width: none;
+    background-color: rgba(4, 30, 41, 0.918);
+    height: max-content;
+}
+body{
+    background-image: url("../pictures/pexels-james-wheeler-417074.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+header{
+    border: 1px solid antiquewhite none;
+    background-color: rgba(240, 248, 255, 0.877);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+main h2{
+    color: aliceblue;
+    font-size: 27px;
+    margin-bottom: 0.3em;
+}
+header a{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+}
+header:hover{
+    box-shadow: 5px 3px  rgba(44, 90, 109, 0.685) ;
+}
+
+header a:hover{
+    gap: 6px;
+    text-decoration: underline;
+}
+header a p{
+    font-size: large;
+    font-weight: bold;
+    font-family: monospace;
+
+}
+main{
+    justify-items: center;
+    padding: 7.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+
+}
+form{
+    border: 1px solid;
+    width: 100%;
+    padding: 2rem;
+    background-color: wheat;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    
+    box-shadow:20px 10px rgba(245, 187, 179, 0.514);
+}
+input{
+    width: 98%;
+    height: 35px;
+    border-radius: 5px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: larger;
+    font-family: monospace;
+    margin-bottom: 1rem;
+    box-shadow:20px 4px rgb(255, 0, 234);
+   /*  border-color: green;
+    background: linear-gradient(to right,rgba(0, 128, 85, 0.432),rgba(0, 128, 85, 0.158));
+    */ /* border-color: red;
+    background: linear-gradient(to right,rgba(128, 0, 0, 0.432),rgba(128, 0, 0, 0.158)); */
+}
+
+button{
+    margin-top: 1em;
+    width: 100px;
+    padding: 1rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+
+form div ul{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    
+    
+}
+form h3{
+    text-align: center;
+    margin-bottom: 12px;
+}
+img{
+    border: 1px solid;
+    padding: 20%;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+
+
+form p{
+    color:red;
+    font-weight:bolder;
+
+}
+form p:last-child{
+    color:brown;
+    font-weight: 500;
+}
+
+#verify{
+    border:1px solid;
+    max-width: fit-content;
+    padding: 0.5rem;
+    border-radius:15px ;
+    -webkit-border-radius:15px ;
+    -moz-border-radius:15px ;
+    -ms-border-radius:15px ;
+    -o-border-radius:15px ;
+    background:radial-gradient(ellipse,rgba(0, 128, 85, 0.432),rgba(0, 128, 85, 0.158)) ;
+    justify-self: end;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: -1rem;
+    
+    
+    color: rgb(48, 243, 184);
+    box-shadow: 2px 2px green;
+    border-style: groove;
+    display: none;
+}
+
+
+@media screen and (min-width:765px) {
+    form{
+        width: 60%;
+    }
+}
