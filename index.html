@@ -5,11 +5,11 @@
     <meta name="author" content="Mr. Mensah" />
     <meta name="description" content="This is an expense tracker application" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Espending</title>
+    <title>E-spending</title>
     <link rel="stylesheet" href="style/landing.css" />
     <link rel="icon" href="" />
   </head>
-  <body id="bod"> <button class="dark" onclick="">
+  <body id="bod"> <button class="dark" onclick="changeState()">
     <p id="theme">&star;</p>
     <p id="theme">&star;</p>
     <p id="theme">&star;</p>
@@ -17,17 +17,17 @@
     <p id="theme">&star;</p>
     <span id="text">Dark Mode</span>
   </button>
-    <header>
-      <nav>
-        <ul>
-          <li class="Company">Espending</li>
-          <!-- <li><a href="#AboutUs">About Us</a></li>
-          <li><a href="#Pricing">Pricing</a></li>
-          <li><a href="#Terms">Terms & Conditions</a></li>
-         --></ul>
+    <header><h1>E-spending</h1>
+      <nav id="nav">
+        
+          <ul id="list">
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#Pricing">Pricing</a></li>
+      </ul>
+         
         <ul class="buttons">
           <li>
-            <a href="dashbaord.html"><button id="login">Log In</button></a>
+            <a href="login.html"><button id="login">Log In</button></a>
           </li>
           <li>
             <a href="signup.html"><button id="sign">Sign Up</button></a>
@@ -35,12 +35,9 @@
          
         </ul>
       </nav>
-      
-      <ul id="list">
-        <li><a href="#AboutUs">About Us</a></li>
-        <li><a href="#Pricing">Pricing</a></li>
-        <li><a href="#Terms">Terms & Conditions</a></li>
-      </ul>
+      <button id="menu" onclick="Menu()">Menu</button>
+      <button id="close" onclick="Close()">Close</button>
+    
     </header>
     <main>
       <section id="Opening">
@@ -106,7 +103,6 @@
           </article>
         </div>
       </section>
-      <section></section>
     </main>
     <footer>
       &copy;<h1>Mr.Mensah</h1>
@@ -114,5 +110,6 @@
       <p><a href="">Terms & Conditions</a></p>
     </footer>
     <script src="/js/darkmode.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

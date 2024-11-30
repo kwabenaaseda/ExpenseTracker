@@ -10,7 +10,6 @@ html {
     font-size: 1dvi;
     overflow: auto;
     box-sizing: border-box;
-    padding: 2dvi;
 }
 
 body {
@@ -38,19 +37,27 @@ a:hover {
 }
 
 header {
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around ;
     box-sizing: border-box;
     width: 100%;
     padding: 1dvi;
-    border: rgb(179, 163, 134) solid 1px;
+    border: rgb(179, 163, 134) solid 1px none;
     background-color: aliceblue;
 }
-nav{
+header h1{
+    align-self: center;
+}
+
+nav{justify-self: flex-end;
     display: inline-flex;
     box-sizing: border-box;
-    width: 100%;
-    gap: 50%;
+    width: 50%;
     padding: 1dvi;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 header ul {
@@ -58,9 +65,10 @@ header ul {
     gap: 10%;
 }
 .buttons{
-    width: 50%;
-    justify-content: end;
+    width: 40%;
+    justify-content: space-around;
     padding-right: 3dvi;
+    align-items: center;
 }
 .buttons button {
     width: 120%;
@@ -75,10 +83,11 @@ header ul {
     -o-border-radius: 10px;
 }
 #list{
-
-justify-content: end;
+width: 40%;
+box-sizing: border-box;
 gap: 2%;
 padding: 1dvi;
+justify-content: space-around;
 }
 .buttons button:hover {
     font-weight: 500;
@@ -173,10 +182,6 @@ to{
     background-color: lime;
     color: white;
     transition: background-color 0.3s, color 0.3s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
 }
 
 #sign:hover {
@@ -238,7 +243,7 @@ right: -3.8px;}
     animation-direction:normal;
 }
 main {
-    margin-top: 10vh;
+    padding: 1em;
     font-weight: bolder;
     font-size:2dvi;
 }
@@ -246,7 +251,7 @@ main {
 section{
     box-sizing: border-box;
     padding: 2dvi;
-    margin-bottom: 2dvi;
+    margin-bottom: 8em;
 }
 #Opening {
     text-align: left;
@@ -300,7 +305,6 @@ margin-top: 1.8%;
 #AboutUs{
     text-align: left;
     overflow-y: auto;
-    margin-bottom: 10px;
 
 }
 .floatrt{
@@ -317,7 +321,6 @@ margin-top: 1.8%;
     background-image: url(/pictures/pexels-james-wheeler-417074.jpg);
     background-size: cover;
     background-origin: border-box;
-    backface-visibility: ;
     background-repeat: no-repeat;
     border: rgba(23, 161, 155, 0.116) groove 5px;
     width: max-content;
@@ -362,7 +365,7 @@ color: wheat;}
     display: inline-flex;
 }
 /*Hover States*/
-.Prices:hover{
+/* .Prices:hover{
     transform:translateY(-2dvi)rotateY(-48deg);
     box-sizing: border-box;
     border: black solid;
@@ -371,11 +374,45 @@ color: wheat;}
     -moz-transform:translateY(-2dvi)rotateY(-48deg);
     -ms-transform:translateY(-2dvi)rotateY(-48deg);
     -o-transform:translateY(-2dvi)rotateY(-48deg);
-}
+} */
 /*hover states end*/
 /*media states*/
-@media screen and (max-width:450px) {
+#menu{
+    display: none;
+}
+#close{
+    display: none;
+}
+@media screen and (max-width:758px) {
+nav{
+    width: 98%;
+    top: 8em;
+    border: 1px solid none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(221, 236, 247);
+    display: none;
+}
 
+
+#menu{
+    display:flex;
+    padding: 1.5em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#close{
+    display:none;
+    padding: 1.5em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
     
 }
 /*media states end */
